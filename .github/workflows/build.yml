@@ -21,6 +21,8 @@ jobs:
           apt-get -q update && apt-get -q install -y build-essential libssl-dev uuid-dev squashfs-tools cryptsetup-bin devscripts dpkg-dev dh-autoreconf help2man libarchive-dev libssl-dev uuid-dev
 
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Build Debian package
         run: |
