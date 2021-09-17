@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Fetch deps
         run: |
-          apt-get -q update && apt-get -q install -y build-essential libssl-dev uuid-dev squashfs-tools cryptsetup-bin
+          apt-get -q update && apt-get -q install -y build-essential libssl-dev uuid-dev squashfs-tools cryptsetup-bin devscripts dpkg-dev dh-autoreconf help2man libarchive-dev libssl-dev uuid-dev
 
       - uses: actions/checkout@v2
 
