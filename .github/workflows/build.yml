@@ -2,6 +2,9 @@ name: build
 
 # Only trigger, when the build workflow succeeded
 on:
+  push:
+    tags:
+      - 'v*.*.*'
   workflow_run:
     workflows: ["CI", "CodeQL"]
     types:
@@ -30,4 +33,4 @@ jobs:
           name: deb-package
           path: /singularity-container_*.deb
           retention-days: 7
- 
+      
