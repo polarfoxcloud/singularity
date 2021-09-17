@@ -1,0 +1,36 @@
+name: build
+
+# Only trigger, when the build workflow succeeded
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_run:
+    workflows: ["CI", "CodeQL"]
+    types:
+      - completed
+
+jobs:
+  debian:
+    name: debian
+    runs-on: ubuntu-20.04
+    container: golang:1.17-buster
+    steps:
+      - name: Fetch deps
+        run: |
+          apt-get -q update && apt-get -q install -y build-essential libssl-dev uuid-dev squashfs-tools cryptsetup-bin
+
+      - uses: actions/checkout@v2
+
+      - name: Build Debian package
+        run: |
+          cp -r dist/debian .
+          DEB_SC_PROFILE=release dpkg-buildpackage --build=binary --no-sign
+        
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: deb-package
+          path: /singularity-container_*.deb
+          retention-days: 7
+      
