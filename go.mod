@@ -18,7 +18,7 @@ require (
 	github.com/containernetworking/plugins v0.9.1
 	github.com/containers/image/v5 v5.15.2
 	github.com/cyphar/filepath-securejoin v0.2.3
-	github.com/fatih/color v1.12.0
+	github.com/fatih/color v1.13.0
 	github.com/garyburd/redigo v1.6.0 // indirect
 	github.com/go-log/log v0.2.0
 	github.com/godbus/dbus v4.1.0+incompatible // indirect
@@ -34,7 +34,7 @@ require (
 	github.com/opencontainers/image-spec v1.0.2-0.20210331164927-859973e32cca
 	github.com/opencontainers/runtime-spec v1.0.3-0.20210326190908-1c3f411f0417
 	github.com/opencontainers/runtime-tools v0.9.1-0.20210326182921-59cdde06764b
-	github.com/opencontainers/selinux v1.8.4
+	github.com/opencontainers/selinux v1.9.1
 	github.com/opencontainers/umoci v0.4.7
 	github.com/pelletier/go-toml v1.9.3
 	github.com/pkg/errors v0.9.1
