@@ -27,7 +27,7 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/gorilla/handlers v1.4.0 // indirect
 	github.com/gorilla/websocket v1.4.2
-	github.com/hpcng/sif v1.6.0
+	github.com/hpcng/sif v1.7.0
 	github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0 // indirect
 	github.com/kr/pty v1.1.8
 	github.com/opencontainers/go-digest v1.0.0
