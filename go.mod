@@ -13,7 +13,7 @@ require (
 	github.com/bugsnag/bugsnag-go v1.5.1 // indirect
 	github.com/bugsnag/panicwrap v1.2.0 // indirect
 	github.com/containerd/cgroups v1.0.1
-	github.com/containerd/containerd v1.5.5
+	github.com/containerd/containerd v1.5.8
 	github.com/containernetworking/cni v0.8.1
 	github.com/containernetworking/plugins v0.9.1
 	github.com/containers/image/v5 v5.15.2
@@ -27,7 +27,7 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/gorilla/handlers v1.4.0 // indirect
 	github.com/gorilla/websocket v1.4.2
-	github.com/hpcng/sif v1.6.0
+	github.com/hpcng/sif v1.7.0
 	github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0 // indirect
 	github.com/kr/pty v1.1.8
 	github.com/opencontainers/go-digest v1.0.0
